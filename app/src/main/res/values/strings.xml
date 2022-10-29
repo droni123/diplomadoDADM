@@ -2,4 +2,5 @@
     <string name="app_name">App Idel</string>
     <string name="holaidel">Hola Idelfonso</string>
     <string name="entre_en">Entré a </string>
+    <string name="btnintent">Boton que ejecuta intento</string>
 </resources>
