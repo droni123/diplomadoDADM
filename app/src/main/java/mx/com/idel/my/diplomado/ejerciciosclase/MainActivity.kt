@@ -1,8 +1,9 @@
-package mx.com.idel.my.diplomado
+package mx.com.idel.my.diplomado.ejerciciosclase
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import mx.com.idel.my.diplomado.R
 
 class MainActivity : AppCompatActivity() {
     private var TAG = "MainActivity"

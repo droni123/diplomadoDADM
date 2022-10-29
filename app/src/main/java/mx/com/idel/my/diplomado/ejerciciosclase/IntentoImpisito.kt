@@ -1,10 +1,11 @@
-package mx.com.idel.my.diplomado
+package mx.com.idel.my.diplomado.ejerciciosclase
 
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import mx.com.idel.my.diplomado.R
 
 class IntentoImpisito : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
