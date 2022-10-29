@@ -3,4 +3,19 @@
     <string name="holaidel">Hola Idelfonso</string>
     <string name="entre_en">Entré a </string>
     <string name="btnintent">Boton que ejecuta intento</string>
+    <!--STRING ENTREGABLE 1-->
+    <string name="e1lt_titulo">Formulario de datos personales</string>
+    <string name="e1lt_nombre">Nombre</string>
+    <string name="e1lt_apellido1">Primer apellido</string>
+    <string name="e1lt_apellido2">Segundo apellido</string>
+    <string name="e1lt_edad">Edad</string>
+    <string name="e1lt_tel">Teléfono</string>
+    <string name="e1lt_email">Correo</string>
+    <string name="e1lt_btn">Enviar datos</string>
+    <string name="e1lt_completo">Nombre completo</string>
+    <string name="e1lt_error">Falta completar los siguientes datos:</string>
+    <string name="e1lt_susses">Los datos que proporcionaste son:</string>
+    <string name="e1lt_sindata">Sin DATOS</string>
+    <string name="e1lt_regresar">Regresar</string>
+
 </resources>

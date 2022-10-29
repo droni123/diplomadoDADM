@@ -11,8 +11,8 @@
         android:layout_height="0dp"
         android:text="Ejemplo de LinerLayout 1"
         android:padding="25dp"
-        android:textColor="@color/teal_700"
-        android:background="@color/purple_500"
+        android:textColor="@color/dorado_c"
+        android:background="@color/azul_o"
         android:textSize="20sp"
         android:gravity="center"
         >
@@ -23,8 +23,8 @@
         android:layout_height="0dp"
         android:text="Ejemplo de LinerLayout 2"
         android:padding="25dp"
-        android:textColor="@color/white"
-        android:background="@color/purple_700"
+        android:textColor="@color/blanco"
+        android:background="@color/azul_c"
         android:textSize="20sp"
         android:gravity="center"
         >
@@ -35,8 +35,8 @@
         android:layout_height="0dp"
         android:text="Ejemplo de LinerLayout 3"
         android:padding="25dp"
-        android:textColor="@color/white"
-        android:background="@color/black"
+        android:textColor="@color/blanco"
+        android:background="@color/negro"
         android:textSize="20sp"
         android:gravity="center"
         >
