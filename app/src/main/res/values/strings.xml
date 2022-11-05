@@ -32,4 +32,8 @@
     <string name="c3radiobtnF">Femenino</string>
     <string name="c3otro">Otro</string>
     <string name="c3nombreusuario">Nombre de usuario</string>
+    <string name="c4primerf">Primer fragmento</string>
+    <string name="c4segundof">Segundo fragmento</string>
+    <string name="c4texto">Texto debajo de fragmento</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
