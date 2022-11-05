@@ -4,9 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ejerciciosclase.layout.RecyclerViewActivity">
-    <androidx.recyclerview.widget.RecyclerView
+    tools:context=".ejerciciosclase.layout.TapsActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/c4tab"
+        android:background="@color/azul_o"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/c3lista" />
+        />
+
 </RelativeLayout>

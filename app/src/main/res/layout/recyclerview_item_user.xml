@@ -22,7 +22,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/c3imgrecycle"
-                android:src="@mipmap/ic_launcher"
+                android:src="@drawable/ci_preceholder"
                 />
             <TextView
                 tools:text="@string/c3nombreusuario"
@@ -33,6 +33,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/bernier_shade_regular"
                 />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

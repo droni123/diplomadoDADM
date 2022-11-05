@@ -13,13 +13,21 @@
         android:layout_margin="20dp"
         >
     </EditText>
-
+    <EditText
+        android:id="@+id/inputOtro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/inputNombre"
+        android:theme="@style/Theme.TemaEjemplo2"
+        >
+    </EditText>
     <Button
         android:id="@+id/btnsend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/c2intento_exp_txt"
-        android:layout_below="@+id/inputNombre"
+        android:layout_below="@+id/inputOtro"
         android:layout_centerHorizontal="true"
          />
 
