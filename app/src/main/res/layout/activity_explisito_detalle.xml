@@ -14,7 +14,7 @@
         android:paddingEnd="10dp"
         android:paddingTop="10dp"
         android:textSize="25sp"
-        android:text="Nombre"
+        android:text="@string/e1lt_nombre"
         android:layout_centerInParent="true"/>
 
     <TextView
@@ -27,7 +27,7 @@
         android:paddingStart="10dp"
         android:paddingTop="10dp"
         android:paddingEnd="10dp"
-        android:text="Apellido"
+        android:text="@string/e1lt_apellido1"
         android:textSize="25sp" />
 
     <TextView
@@ -40,7 +40,7 @@
         android:paddingStart="10dp"
         android:paddingTop="10dp"
         android:paddingEnd="10dp"
-        android:text="Edad"
+        android:text="@string/e1lt_edad"
         android:textSize="25sp" />
 
 </RelativeLayout>

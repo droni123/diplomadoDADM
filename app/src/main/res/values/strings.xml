@@ -2,7 +2,7 @@
     <string name="app_name">App Idel</string>
     <string name="holaidel">Hola Idelfonso</string>
     <string name="entre_en">Entré a </string>
-    <string name="btnintent">Boton que ejecuta intento</string>
+    <string name="btnintent">Botón que ejecuta intento</string>
     <!--STRING ENTREGABLE 1-->
     <string name="e1lt_titulo">Formulario de datos personales</string>
     <string name="e1lt_nombre">Nombre</string>
@@ -17,5 +17,19 @@
     <string name="e1lt_susses">Los datos que proporcionaste son:</string>
     <string name="e1lt_sindata">Sin DATOS</string>
     <string name="e1lt_regresar">Regresar</string>
-
+    <!---->
+    <string name="c1lineal_t1">Ejemplo de LinerLayout 1</string>
+    <string name="c1lineal_t2">Ejemplo de LinerLayout 2</string>
+    <string name="c1lineal_t3">Ejemplo de LinerLayout 3</string>
+    <string name="c2intento_exp_txt">Mostrar datos personales</string>
+    <string name="c2frame_text">Ejemplo Layout</string>
+    <string name="c3relative_title">Texto dentro de relative</string>
+    <string name="c3relative_input">Introduce nombre</string>
+    <string name="c3relative_enviar">Enviar</string>
+    <string name="c3stringdescripcion">Descripción de imagen</string>
+    <string name="c3labelcheck">Tienes credito</string>
+    <string name="c3radiobtnM">Masculino</string>
+    <string name="c3radiobtnF">Femenino</string>
+    <string name="c3otro">Otro</string>
+    <string name="c3nombreusuario">Nombre de usuario</string>
 </resources>
