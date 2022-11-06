@@ -17,6 +17,12 @@
     <string name="e1lt_susses">Los datos que proporcionaste son:</string>
     <string name="e1lt_sindata">Sin DATOS</string>
     <string name="e1lt_regresar">Regresar</string>
+    <!--STRING ENTREGABLE 2-->
+    <string name="e3nombrepet">:: Mascotas ::</string>
+    <string name="e2visualizando">Estas visualizando a</string>
+    <string name="e2enfermo">¿Está enfermo?</string>
+    <string name="e2dueno">Dueño</string>
+    <string name="e2descripcion">Descripción</string>
     <!---->
     <string name="c1lineal_t1">Ejemplo de LinerLayout 1</string>
     <string name="c1lineal_t2">Ejemplo de LinerLayout 2</string>

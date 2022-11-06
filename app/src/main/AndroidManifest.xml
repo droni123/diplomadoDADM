@@ -12,13 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppDiplomado"
         tools:targetApi="31">
+        <activity
+            android:name=".entregables.Entregable2DetallePetActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <!-- MAINACTIVITY -->
         <activity
-            android:name=".ejerciciosclase.fragments.FragmentoManagerActivity"
-            android:exported="true"
-            android:theme="@style/Theme.TemaEjemplo">
+            android:name=".entregables.Entregable2MainActivity"
+            android:exported="true" >
             <intent-filter>
-
                 <!-- ACTIVIDAD PRINCIPAL -->
                 <action android:name="android.intent.action.MAIN" />
                 <!-- INTENT (CATEGORIA) DE LANZAMIENRO -->
@@ -30,5 +35,4 @@
                 android:value="" />
         </activity>
     </application>
-
 </manifest>
