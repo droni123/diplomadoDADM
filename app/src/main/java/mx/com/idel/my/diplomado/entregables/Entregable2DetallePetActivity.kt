@@ -18,7 +18,7 @@ class Entregable2DetallePetActivity : AppCompatActivity() {
         var pGenero = findViewById<RadioGroup>(R.id.e2RGeneroPet)
         var pDescripcion = findViewById<TextView>(R.id.e2RDescripcionPet)
 
-        for (i in 0 until pGenero.getChildCount()) {
+        for (i in 0 until pGenero.childCount) {
             (pGenero.getChildAt(i) as RadioButton).isEnabled = false
         }
         pEnfermo.isEnabled = false
@@ -34,11 +34,9 @@ class Entregable2DetallePetActivity : AppCompatActivity() {
                     "M" -> pGenero.check(R.id.e2RMPet)
                 }
                 pEnfermo.isChecked = dPet.enfermo
-
                 pDescripcion.text = "${getText(R.string.e2descripcion)}: ${dPet.descripcion}"
             }
         }
-
         //boton
         var botonRegresar = findViewById<Button>(R.id.e2regresar)
         botonRegresar.setOnClickListener {
@@ -46,7 +44,6 @@ class Entregable2DetallePetActivity : AppCompatActivity() {
         }
     }
     fun getImageId(context: Context, imageName: String): Int {
-        return context.getResources()
-            .getIdentifier("drawable/$imageName", null, context.getPackageName())
+        return context.resources.getIdentifier( imageName , "drawable", context.packageName )
     }
 }

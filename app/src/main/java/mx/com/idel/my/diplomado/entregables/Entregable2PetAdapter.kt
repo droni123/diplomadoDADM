@@ -28,9 +28,6 @@ class Entregable2PetAdapter(private val pets : ArrayList<Entregable2PetItem>,pri
     override fun onBindViewHolder(holder: PetViewHolder, position: Int) {
         holder.nombre.text = pets[position].nombre
         holder.imagen.setImageResource(getImageId(holder.itemView.context,pets[position].imagen))
-
-        //holder.imagen.setImageResource(R.drawable.perro_1)
-            //items[position].image
         holder.itemView.setOnClickListener {
             listener.onItemSelected(pets[position])
         }
@@ -39,8 +36,7 @@ class Entregable2PetAdapter(private val pets : ArrayList<Entregable2PetItem>,pri
     override fun getItemCount() = pets.size
 
     fun getImageId(context: Context, imageName: String): Int {
-        return context.getResources()
-            .getIdentifier("drawable/$imageName", null, context.getPackageName())
+        return context.resources.getIdentifier( imageName , "drawable", context.packageName )
     }
 
 }
