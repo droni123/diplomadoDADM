@@ -1,13 +1,21 @@
 package mx.com.idel.my.diplomado.entregables
 
+import android.graphics.drawable.AnimatedVectorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import mx.com.idel.my.diplomado.R
 
 class Entregable2MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_entregable2_main)
+        //ANIMACION
+         var animacion = findViewById<ImageView>(R.id.animacion)
+        animacion.setImageResource(R.drawable.loadc)
+        val anima = animacion.drawable as AnimatedVectorDrawable
+        anima.start()
+        //END
         //inicializa el fragment
         supportFragmentManager.beginTransaction()
             .add(R.id.e2ContenedorFragment, Entregable2ListaPetFragment.newinstance( getData() ))

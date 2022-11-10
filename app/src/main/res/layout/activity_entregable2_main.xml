@@ -17,6 +17,12 @@
         android:textColor="@color/blanco"
         android:fontFamily="@font/mythias"
         />
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        app:srcCompat="@drawable/loado"
+        android:id="@+id/animacion"
+        />
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
