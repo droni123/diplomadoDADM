@@ -2,7 +2,6 @@ package mx.com.idel.my.diplomado.entregables
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,10 +10,24 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import mx.com.idel.my.diplomado.R
-import kotlin.math.log
 
 class Entregable2ListaPetFragment : Fragment(),Entreganle2petListener {
-
+    lateinit var listaMascotas : ArrayList<Entregable2PetItem>
+    companion object{
+        fun newinstance(listaM : ArrayList<Entregable2PetItem>) : Entregable2ListaPetFragment{
+            return Entregable2ListaPetFragment().apply {
+                arguments = Bundle().apply {
+                    putSerializable("KEY_MASCOTAS_OBTENIDAS",listaM)
+                }
+            }
+        }
+    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let{
+            listaMascotas = it.getSerializable("KEY_MASCOTAS_OBTENIDAS") as ArrayList<Entregable2PetItem>
+        }
+    }
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -25,7 +38,7 @@ class Entregable2ListaPetFragment : Fragment(),Entreganle2petListener {
         //Se declara RecyclerView
         val listaPet = vista.findViewById<RecyclerView>(R.id.e2RecyclerViewPet)
         //Se declara Adapter
-        val petAdapter = Entregable2PetAdapter(getData(),this)
+        val petAdapter = Entregable2PetAdapter(listaMascotas,this)
         //Se declara layoutManager
         listaPet.layoutManager = LinearLayoutManager(this.context, RecyclerView.VERTICAL,false)
         //Se envia adaptados a lista
@@ -39,7 +52,7 @@ class Entregable2ListaPetFragment : Fragment(),Entreganle2petListener {
         }
         startActivity(vistaDetallePet)
     }
-
+    /*
     private fun getData() : ArrayList<Entregable2PetItem>{
         var data = arrayListOf<Entregable2PetItem>()
         data.add(Entregable2PetItem("Odie","perro_1","Idel","M",false,"Hay mucha química entre su dueño y el"))
@@ -54,6 +67,5 @@ class Entregable2ListaPetFragment : Fragment(),Entreganle2petListener {
         data.add(Entregable2PetItem("Beethoven","perro_10","Luis","M",false,"Protector, no deja de ladrar"))
         return data
     }
-
-
+    */
 }
