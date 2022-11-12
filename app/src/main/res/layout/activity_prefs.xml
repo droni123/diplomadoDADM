@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejerciciosclase.almacenamiento.PrefsActivity"
+    android:background="@color/negro">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/c5inTexto"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:hint="@string/c5hit"
+        android:textColor="@color/azul_cc"
+        android:layout_centerVertical="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/c5btnguardar"
+        android:layout_below="@id/c5inTexto"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/c5btnSave"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/c5ouTexto"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:textColor="@color/dorado_c"
+        android:layout_centerVertical="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/c5btnborrar"
+        android:id="@+id/c5btnDell"
+        android:layout_below="@id/c5ouTexto"
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

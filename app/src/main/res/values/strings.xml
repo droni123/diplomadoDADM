@@ -42,4 +42,15 @@
     <string name="c4segundof">Segundo fragmento</string>
     <string name="c4texto">Texto debajo de fragmento</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="c5opcion1">Opcion 1</string>
+    <string name="c5opcion2">Opcion 2</string>
+    <string name="c5opcion3">Opcion 3</string>
+    <string name="c5opcion1txt">Opcion 1</string>
+    <string name="c5opcion2txt">Opcion 2</string>
+    <string name="c5opcion3txt">Opcion 3</string>
+    <string name="c5hit">Insertar dato</string>
+    <string name="c5btnguardar">Guardar</string>
+    <string name="c5btnborrar">Borrar</string>
+
 </resources>

@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.text.HtmlCompat
 import mx.com.idel.my.diplomado.R
 
 
@@ -28,13 +29,13 @@ class Entregable2DetallePetActivity : AppCompatActivity() {
                 var dPet = bundle.getSerializable("KEY_DATOSPET") as Entregable2PetItem
                 pNombre.text = dPet.nombre
                 pImagen.setImageResource(getImageId(this,dPet.imagen))
-                pDueno.text = "${getText(R.string.e2dueno)}: ${dPet.dueno}"
+                pDueno.text = HtmlCompat.fromHtml("<b>${getText(R.string.e2dueno)}</b>: ${dPet.dueno}",HtmlCompat.FROM_HTML_MODE_LEGACY)
                 when(dPet.genero){
                     "E" -> pGenero.check(R.id.e2REPet)
                     "M" -> pGenero.check(R.id.e2RMPet)
                 }
                 pEnfermo.isChecked = dPet.enfermo
-                pDescripcion.text = "${getText(R.string.e2descripcion)}: ${dPet.descripcion}"
+                pDescripcion.text = HtmlCompat.fromHtml("<b>${getText(R.string.e2descripcion)}</b>: ${dPet.descripcion}",HtmlCompat.FROM_HTML_MODE_LEGACY)
             }
         }
         //boton

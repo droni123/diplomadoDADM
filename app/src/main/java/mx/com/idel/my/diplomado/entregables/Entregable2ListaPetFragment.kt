@@ -40,14 +40,14 @@ class Entregable2ListaPetFragment : Fragment(),Entreganle2petListener {
         //Se declara Adapter
         val petAdapter = Entregable2PetAdapter(listaMascotas,this)
         //Se declara layoutManager
-        listaPet.layoutManager = LinearLayoutManager(this.context, RecyclerView.VERTICAL,false)
+        listaPet.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.VERTICAL,false)
         //Se envia adaptados a lista
         listaPet.adapter = petAdapter
         return vista
     }
     override fun onItemSelected(pet: Entregable2PetItem) {
         Toast.makeText(this.context,"${getString(R.string.e2visualizando)}: ${pet.nombre}", Toast.LENGTH_SHORT).show()
-        var vistaDetallePet = Intent(this.context,Entregable2DetallePetActivity::class.java).apply {
+        var vistaDetallePet = Intent(requireContext(),Entregable2DetallePetActivity::class.java).apply {
             putExtra("KEY_DATOSPET", pet )
         }
         startActivity(vistaDetallePet)

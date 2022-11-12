@@ -10,11 +10,14 @@ class Entregable2MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_entregable2_main)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         //ANIMACION
+        /*
          var animacion = findViewById<ImageView>(R.id.animacion)
         animacion.setImageResource(R.drawable.loadc)
         val anima = animacion.drawable as AnimatedVectorDrawable
         anima.start()
+        */
         //END
         //inicializa el fragment
         supportFragmentManager.beginTransaction()
