@@ -52,5 +52,8 @@
     <string name="c5hit">Insertar dato</string>
     <string name="c5btnguardar">Guardar</string>
     <string name="c5btnborrar">Borrar</string>
+    <string name="c6btnmostrar">Mostrar</string>
+    <string name="c6btnmodificar">Modificar</string>
+
 
 </resources>

@@ -21,4 +21,11 @@
         android:layout_centerHorizontal="true"
         android:textSize="20sp"
         android:text="@string/c5btnguardar"/>
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/savefile"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/c6imgurl"
+        />
 </RelativeLayout>
