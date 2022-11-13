@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import mx.com.idel.my.diplomado.R
 
-class Entregable2ListaPetFragment : Fragment(),Entreganle2petListener {
+class Entregable2ListaPetFragment : Fragment(),Entregable2petListener {
     lateinit var listaMascotas : ArrayList<Entregable2PetItem>
     companion object{
         fun newinstance(listaM : ArrayList<Entregable2PetItem>) : Entregable2ListaPetFragment{

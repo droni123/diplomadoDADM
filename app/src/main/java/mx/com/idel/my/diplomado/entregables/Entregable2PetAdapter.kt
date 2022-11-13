@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import mx.com.idel.my.diplomado.R
 
-class Entregable2PetAdapter(private val pets : ArrayList<Entregable2PetItem>,private val listener: Entreganle2petListener) : RecyclerView.Adapter<Entregable2PetAdapter.PetViewHolder>() {
+class Entregable2PetAdapter(private val pets : ArrayList<Entregable2PetItem>,private val listener: Entregable2petListener) : RecyclerView.Adapter<Entregable2PetAdapter.PetViewHolder>() {
 
     class PetViewHolder(vista: View) : RecyclerView.ViewHolder(vista) {
         var nombre : TextView

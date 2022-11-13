@@ -23,6 +23,19 @@
     <string name="e2enfermo">¿Está enfermo?</string>
     <string name="e2dueno">Dueño</string>
     <string name="e2descripcion">Descripción</string>
+    <!--STRING ENTREGABLE 3-->
+    <string name="e3titulo">:: Animales ::</string>
+    <string name="e3Inicio">Inicio</string>
+    <string name="e3Agregar">Agregar</string>
+    <string name="e3Editar">Editar</string>
+    <string name="e3Borrar">Borrar</string>
+    <string name="e3Guardar">Guardar</string>
+    <string name="e3Imagen">Imagen</string>
+    <string name="e3Detalle">Nombre de Animal</string>
+    <string name="e3Actualizar">Actualizar</string>
+    <string name="e3genero">Genero</string>
+    <string name="e3urlinvalida">La URL proporcionada es inválida</string>
+    <string name="sindatos">Sin Datos</string>
     <!---->
     <string name="c1lineal_t1">Ejemplo de LinerLayout 1</string>
     <string name="c1lineal_t2">Ejemplo de LinerLayout 2</string>
@@ -34,8 +47,8 @@
     <string name="c3relative_enviar">Enviar</string>
     <string name="c3stringdescripcion">Descripción de imagen</string>
     <string name="c3labelcheck">Tienes credito</string>
-    <string name="c3radiobtnM">Masculino</string>
-    <string name="c3radiobtnF">Femenino</string>
+    <string name="c3radiobtnM">Macho</string>
+    <string name="c3radiobtnF">Hembra</string>
     <string name="c3otro">Otro</string>
     <string name="c3nombreusuario">Nombre de usuario</string>
     <string name="c4primerf">Primer fragmento</string>
