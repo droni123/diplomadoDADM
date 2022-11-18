@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Idel</string>
+    <string name="texto1">Texto de demostracion 1</string>
+    <string name="texto2">Texto de demostracion 2</string>
+    <string name="texto3">Texto de demostracion 3</string>
 </resources>
