@@ -1,7 +1,8 @@
-package mx.com.idel.diplomado
+package mx.com.idel.diplomado.view.activitys
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import mx.com.idel.diplomado.R
 import mx.com.idel.diplomado.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

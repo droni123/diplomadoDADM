@@ -3,4 +3,11 @@
     <string name="texto1">Texto de demostracion 1</string>
     <string name="texto2">Texto de demostracion 2</string>
     <string name="texto3">Texto de demostracion 3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="detalle_name">Nombre: %s</string>
+    <string name="detalle_apellido">Apellido: %s</string>
+    <string name="detalle_edad">Edad: %s</string>
+
 </resources>
