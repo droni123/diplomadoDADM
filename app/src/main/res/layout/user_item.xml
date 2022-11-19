@@ -18,6 +18,13 @@
             android:orientation="vertical"
             android:padding="10dp"
             >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imagen"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                />
             <TextView
                 tools:text="Nombre"
                 android:layout_width="match_parent"

@@ -5,6 +5,7 @@ import java.io.Serializable
 data class UserModel(
     val nombre : String,
     val apellido : String,
-    val edad : Int
+    val edad : Int,
+    val image : String
 ): Serializable {
 }
