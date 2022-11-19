@@ -8,6 +8,6 @@
 
     <string name="detalle_name">Nombre: %s</string>
     <string name="detalle_apellido">Apellido: %s</string>
-    <string name="detalle_edad">Edad: %s</string>
+    <string name="detalle_edad">Edad: %d</string>
 
 </resources>

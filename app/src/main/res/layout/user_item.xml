@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="user"
+            type="mx.com.idel.diplomado.model.entities.UserModel" />
+    </data>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -26,19 +32,19 @@
                 android:layout_gravity="center_horizontal"
                 />
             <TextView
-                tools:text="Nombre"
+                android:text="@{ @string/detalle_name(user.nombre) }"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/nombre"
                 android:textSize="20sp"/>
             <TextView
-                tools:text="Apellido"
+                android:text="@{ @string/detalle_apellido( user.apellido ) }"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/apellido"
                 android:layout_marginTop="10dp"/>
             <TextView
-                tools:text="Edad"
+                android:text="@{@string/detalle_edad(user.edad)}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/edad"
@@ -46,3 +52,4 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
+</layout>

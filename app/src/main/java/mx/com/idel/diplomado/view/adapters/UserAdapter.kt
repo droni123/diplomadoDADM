@@ -13,15 +13,15 @@ class UserAdapter(private val items : ArrayList<UserModel>) : RecyclerView.Adapt
 
     class UserViewHolder(val brinding : UserItemBinding) : RecyclerView.ViewHolder(brinding.root) {
         fun bind(user : UserModel,onItemClick: ((UserModel) -> Unit)?) {
-            brinding.nombre.text = "Nombre: ${user.nombre}"
-            brinding.apellido.text = "Apellido: ${user.apellido}"
-            brinding.edad.text = "Edad: ${user.edad}"
+            //brinding.nombre.text = "Nombre: ${user.nombre}"
+            //brinding.apellido.text = "Apellido: ${user.apellido}"
+            //brinding.edad.text = "Edad: ${user.edad}"
+            brinding.user = user
             Glide
                 .with(brinding.root)
                 .load(user.image)
                 .centerCrop()
                 .into(brinding.imagen)
-
             brinding.userCard.setOnClickListener{
                 onItemClick?.invoke(user)
             }

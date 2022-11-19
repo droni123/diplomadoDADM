@@ -33,26 +33,21 @@ class ListFragment : Fragment(R.layout.fragment_list) {
         _binding = FragmentListBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        binding.refresh.setOnRefreshListener {
-            userViewModel.getUserList()
-            binding.refresh.isRefreshing = false
-        }
         userAdapter = UserAdapter(arrayListOf())
-
-        userAdapter.onItemClick = {
-            val action = ListFragmentDirections.actionListFragmentToDetallFragment(it)
-            findNavController().navigate(action)
-/*
-            parentFragmentManager.beginTransaction()
-                .replace(R.id.container,DetallFragment.newInstance(it))
-                .addToBackStack("DetallFragment")
-                .commit()
-*/
-        }
 
         binding.listaUser.layoutManager = LinearLayoutManager(view.context,RecyclerView.VERTICAL,false)
         binding.listaUser.adapter = userAdapter
 
+        userAdapter.onItemClick = {
+            val action = ListFragmentDirections.actionListFragmentToDetallFragment(it)
+            findNavController().navigate(action)
+            /*
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.container,DetallFragment.newInstance(it))
+                .addToBackStack("DetallFragment")
+                .commit()
+            */
+        }
         userViewModel.listaUsuarios.observe(viewLifecycleOwner, Observer {
             userAdapter.updateDataItems(it)
         })
@@ -61,7 +56,10 @@ class ListFragment : Fragment(R.layout.fragment_list) {
             binding.loader.visibility = if (it == true) View.VISIBLE else View.INVISIBLE
             binding.listaUser.visibility = if (it == false) View.VISIBLE else View.INVISIBLE
         }
-        userViewModel.getUserList()
+        binding.refresh.setOnRefreshListener {
+            userViewModel.getUserList()
+            binding.refresh.isRefreshing = false
+        }
         return view
     }
 /*

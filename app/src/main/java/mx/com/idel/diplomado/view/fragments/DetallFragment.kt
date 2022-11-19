@@ -32,12 +32,15 @@ class DetallFragment : Fragment(R.layout.fragment_detall) {
         user = args.user
 
         user?.let {
+            /*
             val name = requireActivity().getString(R.string.detalle_name, it.nombre)
             val apellido = requireContext().getString(R.string.detalle_apellido, it.apellido)
             val edad = requireContext().getString(R.string.detalle_edad, it.edad.toString())
             binding.nombreR.text = name
             binding.apellidoR.text = apellido
             binding.edadR.text = edad
+            */
+            binding.user = user
 
             Glide
                 .with(binding.root)
