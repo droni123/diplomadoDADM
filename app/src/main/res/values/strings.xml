@@ -1,13 +1,36 @@
 <resources>
-    <string name="app_name">Idel</string>
-    <string name="texto1">Texto de demostracion 1</string>
-    <string name="texto2">Texto de demostracion 2</string>
-    <string name="texto3">Texto de demostracion 3</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">appnimal</string>
+    <string name="cuser_nombre">Nombre de usuario</string>
+    <string name="cuser_imagen">Avatar (url)</string>
+    <string name="guardar">Guardar</string>
+    <string name="agregar">Agregar</string>
+    <string name="error_form">Revice: %s</string>
+    <string name="error_falta">Falta: %s</string>
+    <string name="error_url">%s debe ser una url válida</string>
+    <string name="error">Revice los siguientes datos: %s</string>
+    <string name="error_onSave">Error al guardad dato</string>
+    <string name="nombre">Nombre</string>
+    <string name="bienvenido">Bienvenido a appnimal</string>
+    <string name="sindatos">Sin datos</string>
+    <string name="edad">Edad</string>
+    <string name="enfermo">¿Está enfermo?</string>
+    <string name="dueno">Dueño</string>
+    <string name="descripcion">Descripción</string>
+    <string name="inicio">Inicio</string>
+    <string name="editar">Editar</string>
+    <string name="borrar">Borrar</string>
+    <string name="peso">Peso (kg)</string>
+    <string name="imagen">Imagen</string>
+    <string name="detalle">Nombre de animal</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="genero">Genero</string>
+    <string name="macho">Macho</string>
+    <string name="hembra">Hembra</string>
+    <string name="mostrar">Mostrar</string>
+    <string name="modificar">Modificar</string>
 
-    <string name="detalle_name">Nombre: %s</string>
-    <string name="detalle_apellido">Apellido: %s</string>
-    <string name="detalle_edad">Edad: %d</string>
-
+    <string name="creditos">Créditos</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="creditos_datos">Elaborado por:\nIdelfonso De la Cruz Hernández\n\nDesarrollo de Aplicaciones para Dispositivos Móviles\n9ª emisión\n\nModulo: Desarrollo de aplicaciones para Android\n\n21 de noviembre de 2022
+    </string>
 </resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_animal_animaldetaill"
+        app:startDestination="@id/listAnimalsFragment">
+
+        <fragment
+            android:id="@+id/listAnimalsFragment"
+            android:name="mx.com.idel.entregablefinal.view.fragment.ListAnimalsFragment"
+            android:label="fragment_list_animals"
+            tools:layout="@layout/fragment_list_animals">
+            <action
+                android:id="@+id/action_listAnimalsFragment_to_detallAnimalFragment"
+                app:destination="@id/detallAnimalFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/detallAnimalFragment"
+            android:name="mx.com.idel.entregablefinal.view.fragment.DetallAnimalFragment"
+            android:label="fragment_detall_animal"
+            tools:layout="@layout/fragment_detall_animal" >
+            <argument
+                android:name="animal"
+                app:argType="mx.com.idel.entregablefinal.model.entities.AnimalModel" />
+            <action
+                android:id="@+id/action_detallAnimalFragment_to_listAnimalsFragment"
+                app:destination="@id/listAnimalsFragment" />
+        </fragment>
+    </navigation>

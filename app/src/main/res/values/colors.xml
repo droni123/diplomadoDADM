@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="ass">#FF9FD8EA</color>
-    <color name="as">#FF3FA2D6</color>
-    <color name="ai">#2F89C6</color>
-    <color name="ac">#FF005794</color>
-    <color name="ao">#FF102030</color>
+    <color name="os">#FFEB3B</color>
+    <color name="oi">#FFC107</color>
+    <color name="oc">#FF9800</color>
+    <color name="on">#FF5722</color>
+    <color name="oo">#8A2F11</color>
+    <color name="bb2">#FFCCCCCC</color>
     <color name="nn">#FF444444</color>
+    <color name="nn2">#FF333333</color>
     <color name="bb">#FFFFFFFF</color>
 </resources>

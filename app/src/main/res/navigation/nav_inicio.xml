@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inicio"
+    app:startDestination="@id/loadingFragment">
+
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="mx.com.idel.entregablefinal.view.fragment.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading" >
+        <action
+            android:id="@+id/action_loadingFragment_to_perfilConfigFragment"
+            app:destination="@id/perfilConfigFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilConfigFragment"
+        android:name="mx.com.idel.entregablefinal.view.fragment.PerfilConfigFragment"
+        android:label="fragment_perfil_config"
+        tools:layout="@layout/fragment_perfil_config" />
+</navigation>
