@@ -17,8 +17,8 @@ class AppnimalViewModel : ViewModel()  {
     val nombre = MutableLiveData<String?>()
     val avatar = MutableLiveData<String?>()
 
-    fun getConfiguracion(context: Context){
-        bdHelper = AnimalSqlHelper(context)
+    fun getConfiguracion(){
+        bdHelper = AnimalSqlHelper()
         Handler(Looper.getMainLooper()).postDelayed({
             val xNombre = bdHelper.getConfig(KEY_NOMBRE_USER)
             val xAvatar = bdHelper.getConfig(KEY_AVATAR_USER)

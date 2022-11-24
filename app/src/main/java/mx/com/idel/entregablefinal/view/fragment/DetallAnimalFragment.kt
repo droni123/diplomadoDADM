@@ -62,18 +62,16 @@ class DetallAnimalFragment : Fragment() {
                 putExtra(KEY_ANIMAL_A_EDITAR, animal)
             }
             startActivity(intentEditar)
-            val accion = DetallAnimalFragmentDirections.actionDetallAnimalFragmentToListAnimalsFragment()
-            findNavController().navigate(accion)
+            findNavController().navigateUp()
         }
         binding.btnborrar.setOnClickListener {
             animal?.let {
-                listaViewModel.dellAnimal(requireContext(),it.id)
+                listaViewModel.dellAnimal(it.id)
                 listaViewModel.statusdell.observe(viewLifecycleOwner){
                     if (it > -1){
                         if(it != 0){
                             Toast.makeText(context,"SE ELIMINO: ${animal?.nombre}",Toast.LENGTH_SHORT).show()
-                            val accion = DetallAnimalFragmentDirections.actionDetallAnimalFragmentToListAnimalsFragment()
-                            findNavController().navigate(accion)
+                            findNavController().navigateUp()
                         }else{
                             Toast.makeText(context,"NO EXISTE REGISTRO",Toast.LENGTH_SHORT).show()
                         }

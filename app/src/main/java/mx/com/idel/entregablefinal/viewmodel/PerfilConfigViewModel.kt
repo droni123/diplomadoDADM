@@ -17,8 +17,8 @@ class PerfilConfigViewModel : ViewModel()  {
 
     val status = MutableLiveData<Int>()
 
-    fun saveConfiguracion(context: Context,nombre:String,avatar:String){
-        bdHelper = AnimalSqlHelper(context)
+    fun saveConfiguracion(nombre:String,avatar:String){
+        bdHelper = AnimalSqlHelper()
         Handler(Looper.getMainLooper()).postDelayed({
             val nombre_to_save = ConfiguracionModel(key = KEY_NOMBRE_USER, value = nombre)
             val avatar_to_save = ConfiguracionModel(key = KEY_AVATAR_USER, value = avatar)

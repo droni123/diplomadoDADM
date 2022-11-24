@@ -59,7 +59,7 @@ class AppnimalActivity : AppCompatActivity() {
         cargardatosperfil(this@AppnimalActivity)
     }
     private fun cargardatosperfil(context: Context) {
-        appnimalViewModel.getConfiguracion(context)
+        appnimalViewModel.getConfiguracion()
         appnimalViewModel.nombre.observe(this) {
             if (!it.isNullOrEmpty()){
                 val spannable = SpannableStringBuilder("${getString(R.string.bienvenido)}:\n${it}")

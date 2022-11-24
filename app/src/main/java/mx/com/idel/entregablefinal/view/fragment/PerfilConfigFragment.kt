@@ -54,7 +54,7 @@ class PerfilConfigFragment : Fragment() {
         }
         if(mensaje === ""){
             HiddeoOrShowItems(false)
-            PerfilViewModel.saveConfiguracion(contexto,nombre,avatar)
+            PerfilViewModel.saveConfiguracion(nombre,avatar)
             PerfilViewModel.status.observe(viewLifecycleOwner){
                 if(it > -1){
                     activity?.let{

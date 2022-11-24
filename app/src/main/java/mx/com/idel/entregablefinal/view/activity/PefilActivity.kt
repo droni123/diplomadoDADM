@@ -30,7 +30,7 @@ class PefilActivity : AppCompatActivity() {
         }
     }
     private fun cargardatosperfil(context: Context) {
-        appnimalViewModel.getConfiguracion(context)
+        appnimalViewModel.getConfiguracion()
         appnimalViewModel.nombre.observe(this) {
             if (!it.isNullOrEmpty()){
                 binding.inputnombre.setText(it)
@@ -64,7 +64,7 @@ class PefilActivity : AppCompatActivity() {
         if(mensaje === ""){
 
             HiddeoOrShowItems(false)
-            PerfilViewModel.saveConfiguracion(contexto,nombre,avatar)
+            PerfilViewModel.saveConfiguracion(nombre,avatar)
             PerfilViewModel.status.observe(this){
                 if(it > -1){
                     finish()

@@ -20,8 +20,8 @@ class ListViewModel : ViewModel()  {
 
     val statussave = MutableLiveData<Int>()
 
-    fun getAnimalList(context: Context){
-        bdHelper = AnimalSqlHelper(context)
+    fun getAnimalList(){
+        bdHelper = AnimalSqlHelper()
         loader.postValue(true)
         Handler(Looper.getMainLooper()).postDelayed({
             val animales = bdHelper.getAllAnimal()
@@ -30,16 +30,16 @@ class ListViewModel : ViewModel()  {
         }, KEY_TIEMPO_DE_ESPERA)
     }
 
-    fun dellAnimal(context: Context,id: Int){
-        bdHelper = AnimalSqlHelper(context)
+    fun dellAnimal(id: Int){
+        bdHelper = AnimalSqlHelper()
         Handler(Looper.getMainLooper()).postDelayed({
             val estado = bdHelper.deleteAnimal(id)
             statusdell.postValue(estado)
         }, KEY_TIEMPO_DE_ESPERA)
     }
 
-    fun saveAnimal(context: Context,animal: AnimalModel){
-        bdHelper = AnimalSqlHelper(context)
+    fun saveAnimal(animal: AnimalModel){
+        bdHelper = AnimalSqlHelper()
         Handler(Looper.getMainLooper()).postDelayed({
             val estadosave = bdHelper.savAnimal(animal)
             statussave.postValue(estadosave)

@@ -23,14 +23,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        inicializarConfig(this@MainActivity)
+        inicializarConfig()
     }
     override fun onSupportNavigateUp(): Boolean {
         return NavigationUI.navigateUp(navController,null)
     }
 
-    private fun inicializarConfig(context: Context){
-        startViewModel.getConfiguracion(context)
+    private fun inicializarConfig(){
+        startViewModel.getConfiguracion()
         startViewModel.nombre.observe(this) {
             if (it.value.isNullOrEmpty()) {
                 val accion = LoadingFragmentDirections.actionLoadingFragmentToPerfilConfigFragment()

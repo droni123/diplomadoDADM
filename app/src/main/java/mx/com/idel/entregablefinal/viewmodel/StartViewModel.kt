@@ -16,8 +16,8 @@ class StartViewModel : ViewModel()  {
 
     val nombre = MutableLiveData<ConfiguracionModel>()
 
-    fun getConfiguracion(context: Context){
-        bdHelper = AnimalSqlHelper(context)
+    fun getConfiguracion(){
+        bdHelper = AnimalSqlHelper()
         Handler(Looper.getMainLooper()).postDelayed({
             val n = bdHelper.getConfig(KEY_NOMBRE_USER)
             nombre.postValue(n)

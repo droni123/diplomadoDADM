@@ -22,8 +22,5 @@
             <argument
                 android:name="animal"
                 app:argType="mx.com.idel.entregablefinal.model.entities.AnimalModel" />
-            <action
-                android:id="@+id/action_detallAnimalFragment_to_listAnimalsFragment"
-                app:destination="@id/listAnimalsFragment" />
         </fragment>
     </navigation>

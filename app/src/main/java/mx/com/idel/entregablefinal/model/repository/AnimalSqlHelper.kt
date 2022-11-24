@@ -1,15 +1,15 @@
 package mx.com.idel.entregablefinal.model.repository
 
 import android.content.ContentValues
-import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.provider.BaseColumns
+import mx.com.idel.entregablefinal.App
 import mx.com.idel.entregablefinal.model.entities.AnimalModel
 import mx.com.idel.entregablefinal.model.entities.ConfiguracionModel
 
-class AnimalSqlHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME,null, DATABASE_VERSION){
+class AnimalSqlHelper() : SQLiteOpenHelper(App.instance, DATABASE_NAME,null, DATABASE_VERSION){
     companion object{
         private const val DATABASE_VERSION = 1
         private const val DATABASE_NAME = "datosanimales.db"

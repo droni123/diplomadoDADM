@@ -95,7 +95,7 @@ class EditarAnimalActivity : AppCompatActivity() {
             if(mensaje === ""){
                 HiddeoOrShowItems(false)
                 val animalToSave = AnimalModel(animal.id, txtNombre, txtImagen, txtDueno, txtPeso.toDouble(), datGenero, valEnfermo, txtDescripcion)
-                listaViewModel.saveAnimal(this@EditarAnimalActivity,animalToSave)
+                listaViewModel.saveAnimal(animalToSave)
                 listaViewModel.statussave.observe(this){
                     if (it > -1){
                         Toast.makeText(this@EditarAnimalActivity,"${animal.nombre} GUARDADO",Toast.LENGTH_SHORT).show()

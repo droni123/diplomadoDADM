@@ -44,7 +44,7 @@ class ListAnimalsFragment : Fragment() {
 
         binding.refresh.setOnRefreshListener {
             binding.refresh.isRefreshing = false
-            listaViewModel.getAnimalList(view.context)
+            listaViewModel.getAnimalList()
         }
         listaViewModel.loader.observe(viewLifecycleOwner) {
             binding.loaddatos.visibility = if (it == true) View.VISIBLE else View.INVISIBLE
@@ -60,15 +60,13 @@ class ListAnimalsFragment : Fragment() {
             val accion = ListAnimalsFragmentDirections.actionListAnimalsFragmentToDetallAnimalFragment(it)
             findNavController().navigate(accion)
         }
-        listaViewModel.getAnimalList(view.context)
+        listaViewModel.getAnimalList()
         return view
     }
 
     override fun onResume() {
         super.onResume()
-        activity?.let{
-            listaViewModel.getAnimalList(it)
-        }
+        listaViewModel.getAnimalList()
     }
 
 }
